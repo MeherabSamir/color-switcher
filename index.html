@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COLOR SWITCHER</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+:root {
+  --btn-1: #485460;
+  --btn-2: #f53b57;
+  --btn-3: #222f3e;
+  --btn-4: #8c7ae6;
+  --btn-5: #55efc4;
+  --btn-6: #474787;
+  /* #b1acfc */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f6793d;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 170px 250px;
+}
+
+p {
+  color: #fff;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-box {
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+}
+
+.button-switcher {
+  margin: 10px;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.btn-1 {
+  background: var(--btn-1);
+}
+
+.btn-2 {
+  background: var(--btn-2);
+}
+
+.btn-3 {
+  background: var(--btn-3);
+}
+
+.btn-4 {
+  background: var(--btn-4);
+}
+
+.btn-5 {
+  background: var(--btn-5);
+}
+
+.btn-6 {
+  background: var(--btn-6);
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-box">
+        <span>Switch Color:</span>
+      </div>
+      <div class="button-switcher">
+        <a href="#" class="btn btn-1"></a>
+        <a href="#" class="btn btn-2"></a>
+        <a href="#" class="btn btn-3"></a>
+        <a href="#" class="btn btn-4"></a>
+        <a href="#" class="btn btn-5"></a>
+        <a href="#" class="btn btn-6"></a>
+      </div>
+    </div>
+    <p>Made With &#128151 By Meherab Samir</p>
+    <!-- JQUERY SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+  $(".btn-1").click(function(){
+    $('body').css("background","var(--btn-1)")
+  });
+
+  $(".btn-2").click(function(){
+    $('body').css("background","var(--btn-2)")
+  });
+
+  $(".btn-3").click(function(){
+    $('body').css("background","var(--btn-3)")
+  });
+
+  $(".btn-4").click(function(){
+    $('body').css("background","var(--btn-4)")
+  });
+
+  $(".btn-5").click(function(){
+    $('body').css("background","var(--btn-5)")
+  });
+
+  $(".btn-6").click(function(){
+    $('body').css("background","var(--btn-6)")
+  }); 
+ 
+});</script>
+  </body>
+</html>
