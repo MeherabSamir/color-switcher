@@ -2,4 +2,6 @@
 Color Switcher App made with HTML , CSS &amp; JQUERY.
 
 
-[Preview](https://meherabsamir.github.io/color-switcher/)
+[Live demo](https://meherabsamir.github.io/color-switcher/)
+
+[Code](https://github.com/MeherabSamir/color-switcher)
